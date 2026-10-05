@@ -144,8 +144,8 @@ footer{background:var(--forest);color:#cfc2e6;text-align:center;padding:20px;fon
 .meter i{display:block;height:100%;width:var(--w);border-radius:99px;background:linear-gradient(90deg,var(--forest),var(--gold))}
 .js .meter i{width:0;transition:width 1.3s cubic-bezier(.2,.7,.2,1) .35s}
 .js .in .meter i{width:var(--w)}
-.trait ul{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
-.trait li{white-space:nowrap;padding:8px 18px;border-radius:999px;border:1.5px solid var(--sage);color:var(--forest);font-weight:500;transition:background .25s,border-color .25s,transform .25s}
+.trait ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;list-style:none;padding:0}
+.trait li{display:flex;align-items:center;justify-content:center;text-align:center;padding:10px 16px;min-height:44px;border-radius:999px;border:1.5px solid var(--sage);color:var(--forest);font-weight:500;font-size:.95rem;line-height:1.3;transition:background .25s,border-color .25s,transform .25s;overflow-wrap:break-word;word-break:break-word;white-space:normal}
 .trait li:hover{background:var(--blush);border-color:var(--blush);transform:translateY(-3px)}
 @media(max-width:820px){.tiles,.duo{grid-template-columns:1fr}}
 
@@ -241,7 +241,7 @@ footer{background:var(--forest);color:#cfc2e6;text-align:center;padding:20px;fon
 <div>
 <p class="hi h1">Halo, saya</p>
 <h1 class="h2">Villiandra Assya</h1>
-<p class="role h3">Lulusan Sarjana Kesehatan Masyarakat yang berpengalaman di administrasi kesehatan, pengolahan data, dan administrasi proyek.</p>
+<p class="role h3">Lulusan Sarjana Kesehatan Masyarakat yang berpengalaman di bidang administrasi kesehatan, pengolahan data, dan administrasi proyek.</p>
 <div class="btns h4">
 <a class="btn p" href="#kontak">Hubungi saya</a>
 <a class="btn s" href="#pengalaman">Lihat pengalaman</a>
@@ -259,12 +259,12 @@ footer{background:var(--forest);color:#cfc2e6;text-align:center;padding:20px;fon
 <section id="tentang"><div class="wrap row">
 <h2 class="rv">Tentang saya</h2>
 <div class="rv">
-<p class="lead">Saya lulusan baru Sarjana Kesehatan Masyarakat Universitas Muhammadiyah Jakarta. Pengalaman saya mencakup administrasi kesehatan, pengolahan dan analisis data, administrasi proyek, dan pelayanan kesehatan, yang saya dapatkan lewat magang, organisasi, dan praktik lapangan.</p>
-<p class="lead">Saya teliti, disiplin, adaptif, dan bertanggung jawab. Saya terbiasa bekerja mandiri maupun dalam tim, dan ingin terus berkembang di bidang administrasi, pelayanan, dan operasional, khususnya di sektor kesehatan.</p>
+<p class="lead">Saya lulusan baru Sarjana Kesehatan Masyarakat dari Universitas Muhammadiyah Jakarta. Pengalaman saya mencakup administrasi kesehatan, pengolahan dan analisis data, administrasi proyek, dan pelayanan kesehatan, yang saya dapatkan melalui magang, organisasi, dan praktik lapangan.</p>
+<p class="lead">Saya teliti, disiplin, adaptif, dan bertanggung jawab. Terbiasa bekerja secara mandiri maupun dalam tim, dan ingin terus berkembang di bidang administrasi, pelayanan, dan operasional, khususnya di sektor kesehatan.</p>
 <div class="stats">
 <div class="stat"><strong data-n="3.70" data-d="2">3,70</strong><span>IPK Sarjana Kesehatan Masyarakat</span></div>
-<div class="stat"><strong data-n="1300">1.300</strong><span>data skrining peserta BPJS yang diproses</span></div>
-<div class="stat"><strong data-n="2">2</strong><span>magang di Bali dan Tangerang Selatan</span></div>
+<div class="stat"><strong data-n="1300">1.300</strong><span>Data PIS-PK yang diproses ke dalam sistem berbasis website </span></div>
+<div class="stat"><strong data-n="2">2</strong><span>Pengalaman Magang Hotel Titik Dua dan Puskesmas Bhakti Jaya</span></div>
 </div>
 </div>
 </div></section>
@@ -308,9 +308,9 @@ footer{background:var(--forest);color:#cfc2e6;text-align:center;padding:20px;fon
 <p class="org">Puskesmas Bhakti Jaya, Tangerang Selatan</p>
 <p class="date">Juli 2024 – Agustus 2024</p>
 <ul>
-<li>Mengolah data kesehatan digital melalui aplikasi Satu Sehat secara teliti dan terstruktur untuk menjaga akurasi informasi.</li>
-<li>Menginput data survei dan informasi keluarga ke sistem berbasis website secara akurat dan sistematis.</li>
-<li>Memproses dan menginput 1.300 data hasil skrining peserta BPJS, dengan memastikan data lengkap, tepat, dan konsisten.</li>
+<li>Memasukan data skrining BPJS dan 1.300 data PIS-PK ke dalam sistem berbasis website secara akurat dan sistematis untuk mendukung administrasi pelayanan kesehatan. </li>
+<li>Mengelola data kesehatan secara digital melalui ASIK (Aplikasi Sehat Indonesiaku) dengan memastikan ketepatan dan kelengkapan data.</li>
+<li>Berpartisipasi dalam pelaksanaan kegiatan Posbindu dan Posyandu bersama tenaga kesehatan untuk mendukung kelancaran pelayanan dan pencatatan kesehatan masyarakat.</li>
 </ul>
 <div class="shots"><span class="shots-t">Dokumentasi kegiatan</span><div class="shots-g"><button type="button" class="shot" data-base="magang/magang_puskesmas1" data-cap="Puskesmas Bhakti Jaya"><img alt="Dokumentasi kegiatan di Puskesmas Bhakti Jaya, foto 1" loading="lazy"><span class="ph2">magang_puskesmas1</span></button><button type="button" class="shot" data-base="magang/magang_puskesmas2" data-cap="Puskesmas Bhakti Jaya"><img alt="Dokumentasi kegiatan di Puskesmas Bhakti Jaya, foto 2" loading="lazy"><span class="ph2">magang_puskesmas2</span></button></div></div>
 </div>
@@ -318,7 +318,7 @@ footer{background:var(--forest);color:#cfc2e6;text-align:center;padding:20px;fon
 
 <div class="panel" id="lapangan">
 <div class="card">
-<h3>Praktik Belajar Lapangan</h3>
+<h3>Pengalaman Belajar Lapangan</h3>
 <p class="org">Puskesmas Situ Gintung</p>
 <p class="date">Februari – Juni 2025</p>
 <ul>
@@ -411,8 +411,8 @@ footer{background:var(--forest);color:#cfc2e6;text-align:center;padding:20px;fon
 <div class="tiles">
 <div class="tile"><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Microsoft Office</h3><p>Pengolahan dokumen dan data untuk kebutuhan administrasi.</p></div>
 <div class="tile"><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/><path d="M12 9v5M9.5 11.5h5"/></svg></span><h3>Administrasi Kesehatan</h3><p>Mengelola administrasi, data, dan dokumen untuk mendukung kelancaran pelayanan serta kegiatan operasional di bidang kesehatan.</p></div>
-<div class="tile"><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><h3>Manajemen Dokumen</h3><p>Pengelolaan dokumen yang rapi, lengkap, dan konsisten.</p></div>
-<div class="tile"><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>Analisis Data</h3><p>Kemampuan mengolah dan memahami data kesehatan untuk menemukan informasi, pola, dan hasil yang dapat membantu dalam pengambilan keputusan.</p></div>
+<div class="tile"><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><h3>Manajemen Dokumen</h3><p>Melakukan penataan dan pemeliharaan dokumen secara terstruktur dengan memperhatikan kelengkapan, ketepatan, serta kerahasiaan data.</p></div>
+<div class="tile"><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>Analisis Data</h3><p>Melakukan penataan dan pemeliharaan dokumen secara terstruktur dengan memperhatikan kelengkapan, ketepatan, serta kerahasiaan data.</p></div>
 </div>
 
 <div class="duo">
@@ -424,7 +424,7 @@ footer{background:var(--forest);color:#cfc2e6;text-align:center;padding:20px;fon
 <div class="trait">
 <h3>Sikap kerja</h3>
 <ul>
-<li>Teliti</li><li>Disiplin</li><li>Adaptif</li><li>Bertanggung jawab</li><li>Komunikasi yang baik</li>
+<li>Teliti</li><li>Disiplin</li><li>Adaptif</li><li>Bertanggung jawab</li><li>Komunikasi yang baik</li><li>Kerja sama tim</li><li>Organisasi</li><li>Empati</li>
 </ul>
 </div>
 </div>
